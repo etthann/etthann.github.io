@@ -1,0 +1,21 @@
+.Body {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-image: url('../../images/StartImages/ide_background_color.png');
+  }
+  
+  .HelloWorldContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .HelloWorld {
+    font-size: 4vw;
+    margin-right: 35%;
+    margin-top: -15%;
+  }
+  
+  

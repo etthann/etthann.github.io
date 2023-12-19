@@ -1,0 +1,68 @@
+.Container {
+    background-image: url("../../../images/StartImages/background_color.png");
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    animation: fadeIn 1s ease-in;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .HeaderObjects {
+    width: 100%;  
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .FileName {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+  
+  .FileButton {
+      display: flex;
+      align-items: center;
+      margin-right: 2%;
+      background-color: transparent;
+      border: 0;
+      border-radius: 1vw;
+  }
+  
+  .HeaderImage {
+    object-fit: contain;
+    overflow: hidden;
+    width: 3vw;
+    padding: 1vw;
+    background-color: transparent;
+  }
+  
+  .TextToWhite {
+    color: white;
+    font-size: 2vw;
+    padding: 2%;
+  }
+  
+  .Empty {
+    background-image: url('../../../images/StartImages/ide_background_color.png');
+    width: 100%;
+    height: 10vh;
+    display: flex;
+  }
+  
+  .FileButton:hover {
+    background-color: #36454F;
+    transition: background-color 0.5s ease;
+  }
+  
+  
+  

@@ -1,0 +1,56 @@
+.FrameworksText {
+    position: absolute;
+    font-size: 5vw;
+    font-family: 'Adelle Sans';
+    margin-bottom: 35%;
+}
+
+.FrameworksContainer {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    position: absolute;
+    margin-bottom: 15%;
+  }
+  
+
+.Frameworks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1vw;
+    background-color: #5A5A5A;
+    margin: 0 2rem;
+    width: 20%;
+
+};
+
+img {
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+}
+
+.Hide {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(100%);
+    transition: all 1.5s;
+}
+
+.Show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+
+.Frameworks:nth-child(1) {
+    transition-delay: 200ms;
+}
+
+.Frameworks:nth-child(2) {
+    transition-delay: 400ms;
+}
+.Frameworks:nth-child(3) {
+    transition-delay: 600ms;
+}

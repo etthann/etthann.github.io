@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css?family=Adelle+Sans");
+@import url("https://fonts.googleapis.com/css?family=Courier");
+
+.MainContainer {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+
+.MainContainer::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.Page {
+  display: flex;
+  flex-direction: column;
+  background-color: #131316;
+  min-height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.IntroWordsContainer {
+  background-color: transparent;
+  color: #ffffff;
+  position: absolute;
+  display: flex;
+  margin-top: 22.5%;
+  margin-left: 19.5%;
+  font-family: "Adelle Sans";
+  animation-name: SlideInTextFromTop;
+  animation-duration: 1.25s;
+}
+
+@keyframes SlideInTextFromTop {
+  0% {
+    opacity: 0;
+    margin-top: 0%;
+    margin-left: 0%;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 22.5%;
+    margin-left: 19.5;
+  }
+}
+
+.MyNameContainer {
+  width: 43vw;
+  height: 12vw;
+  background-color: transparent;
+  color: #ffffff;
+  position: absolute;
+  margin-top: 21.5%;
+  margin-left: 19.4%;
+  animation-duration: 1.25s;
+  animation-name: SlideInTextFromLeft;
+  font-size: 3vw;
+  font-family: "Adelle Sans";
+}
+
+@keyframes SlideInTextFromLeft {
+  0% {
+    opacity: 0;
+    margin-left: -20%;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 19.4%;
+  }
+}
+
+.AboutMe {
+  color: #ffffff;
+  background-color: transparent;
+  display: flex;
+  font-size: 0.5vw;
+  width: 29vw;
+  height: 15vh;
+  margin-top: 31.3%;
+  margin-left: 19.5%;
+  position: absolute;
+  font-family: "Courier";
+  animation-duration: 1.5s;
+  animation-name: SlideInTextFromBottom;
+}
+
+@keyframes SlideInTextFromBottom {
+  0% {
+    opacity: 0;
+    margin-top: 55%;
+    margin-left: 30%;
+  }
+  100% {
+    opacity: 1;
+    margin-bottom: 31.2%;
+    margin-left: 19.5%;
+  }
+}
+
+.Spacing {
+  min-height: 4vw;
+  width: 100vw;
+  background-color: #131316;
+}
+
+
+
+section {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  min-height: 100%;
+  color: #ffffff;
+  background-color: #131316;
+  
+}
+

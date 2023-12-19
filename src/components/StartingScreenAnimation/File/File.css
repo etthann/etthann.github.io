@@ -1,0 +1,107 @@
+/* File.css */
+
+.FileModal {
+    position: absolute;
+    background-color: transparent;
+    width: 24.6%;
+    height: 20vh;
+    top: 12vh;
+    right: 1.5vw; 
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .FileContainer {
+    border-radius: 1vw;
+    width: 100%;
+    height: 100%;
+    background-color: #43464B;
+    padding: 2%;
+    overflow: hidden;
+  }
+  
+  .SubContainer {
+    background-color: transparent;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    border-radius: 1vw;
+  }
+  
+  .Image {
+    position: absolute;
+    width: 2vw;
+    height: 2vw;
+    padding: 2vw;
+    resize: contain;
+    border-radius: 1vw;
+    align-items: center;
+    background-color: transparent;
+  
+  }
+  
+  .Text {
+    position: relative;
+    font-size: 1.7vw;
+    padding: 2%;
+    left: 5vw;
+  }
+  
+  .SourceCode {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 1vw;
+    padding: 2%;
+    color: white; 
+    margin-top: 1.1vw;
+  }
+  
+  .HiddenUntilHover {
+    position: relative;
+    display: none;
+    align-items: center;
+    left: 10vw;
+  }
+  
+  .VerticalLine {
+    height: 40%;
+    width: 0.1vw;
+    background-color: black;
+  }
+  
+  .SubContainer:hover .HiddenUntilHover {
+    display: flex;
+  }
+  
+  .SubContainer:hover {
+    background-color: #625D5D;
+    transition: background-color 0.5s ease;
+  }
+  
+  .RunButtonHoverContainer {
+    display: flex;
+    position: absolute;
+    margin-left: 1vw;
+    width: 4vw;
+    height: 3.5vw;
+    border-radius: 0.5vw;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .RunButtonHoverContainer:hover {
+    background-color: #36454F;
+    transition: background-color 0.5s ease;
+  }
