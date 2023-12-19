@@ -2,6 +2,7 @@ import React from "react";
 import "./Main.css";
 import Logo from "../../components/MainScreenAnimation/Logo/Logo";
 import Frameworks from "../../components/MainScreenAnimation/Framework/Framework";
+import AboutMe from "../../components/MainScreenAnimation/AboutMe/AboutMe";
 
 const Main: React.FC = () => {
   return (
@@ -27,10 +28,15 @@ const Main: React.FC = () => {
       {/* Second Page */}
       <div className="Page">
         <section>
-
+          <AboutMe/>
         </section>
       </div>
 
+      <div className="Spacing">&nbsp;</div>
+      <div className="Spacing">&nbsp;</div>
+      <div className="Spacing">&nbsp;</div>
+      <div className="Spacing">&nbsp;</div>
+      <div className="Spacing">&nbsp;</div>
       <div className="Spacing">&nbsp;</div>
       <div className="Spacing">&nbsp;</div>
       <div className="Spacing">&nbsp;</div>

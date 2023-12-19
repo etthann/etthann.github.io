@@ -1,0 +1,38 @@
+.AboutMeTitle {
+    position: absolute;
+    font-size: 5vw;
+    font-family: 'Adelle Sans';
+    margin-bottom: 25%;
+}
+
+.AboutMeText {
+    position: absolute;
+    font-size: 2vw;
+    margin-bottom: 5%;
+}
+
+.SocialsContainer {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    background-color: transparent;
+    margin-top: 72vh;
+    width: 60vw;
+    height: 60vh;
+    column-gap: 10%;
+    row-gap: 10%;
+    
+}
+
+.Socials {
+    border: 1px solid black;
+    border-radius: 2vw;
+    background-color: wheat;
+}
+
+.SocialImages {
+    overflow: hidden;
+    width: 20%;
+    transform: translateY(-30%);
+    padding: 2%;
+}
