@@ -35,7 +35,7 @@ const Typing: React.FC<TypingProps> = ({
         setCursorVisible(true);
         setCurrentText((prevText) => prevText + text[currentIndex]);
         setCurrentIndex((prevIndex) => prevIndex + 1);
-        setDelay((prevDelay) => Math.max(prevDelay - 5, 0));
+        setDelay((prevDelay) => Math.max(prevDelay - 15, 0));
       } else {
         setDelay(520);
         setBlinkingCount(0);

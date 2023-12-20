@@ -7,8 +7,9 @@
 
 .AboutMeText {
     position: absolute;
-    font-size: 2vw;
+    font-size: 1.5vw;
     margin-bottom: 5%;
+    font-family: 'Courier';
 }
 
 .SocialsContainer {
@@ -16,23 +17,88 @@
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
     background-color: transparent;
-    margin-top: 72vh;
-    width: 60vw;
-    height: 60vh;
+    margin-top: 90vh;
+    width: 70vw;
+    height: 80vh;
     column-gap: 10%;
     row-gap: 10%;
-    
+    position: absolute;
 }
 
 .Socials {
-    border: 1px solid black;
     border-radius: 2vw;
-    background-color: wheat;
+    background-color: rgb(104, 27, 104);
+    position: relative;
+    animation: bounceUntilHovered infinite 2s ease-in-out;
+    transition: transition 0.3s ease-in-out;
+}
+
+.Socials:hover {
+    transform: scale(1.05);
+    animation: none;
+}
+
+.Socials:not(:hover) {
+    animation: bounceUntilHovered infinite 2s ease-in-out;
+}
+
+@keyframes bounceUntilHovered {
+    0% {
+        transform: translateY(-0.2%);
+    }
+    50% {
+        transform: translateY(0.2%);
+    }
+    100% {
+        transform: translateY(-0.2%);
+    }
+}
+
+
+@keyframes enlargeSocialContainer{
+    0% {
+        transform: scale(100%);
+    }
+    100% {
+        transform: scale(110%);
+    }
 }
 
 .SocialImages {
     overflow: hidden;
+    display: flex;
     width: 20%;
-    transform: translateY(-30%);
+    height: 30%;
+    transform: translateY(-30%) translateX(150%);
     padding: 2%;
+    z-index: 1000;
+    position: absolute;
+    margin-top: 5%;
+    background-color: transparent;
+    align-self: center;
+}
+
+
+.HideText {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(50%);
+    transition: all 1.5s;
+}
+
+.Show {
+    opacity: 1;
+    filter: invert(0) blur(0);
+    transform: translateY(0);
+}
+
+.HideContainer {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 1s;
+}
+
+.Show {
+    transform: translateX(0);
+    opacity: 1;
 }

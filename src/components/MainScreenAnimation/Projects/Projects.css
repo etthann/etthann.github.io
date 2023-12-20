@@ -1,0 +1,14 @@
+.ProjectsText {
+    position: absolute;
+    font-size: 5vw;
+    font-family: 'Adelle Sans';
+    margin-bottom: 80vw;
+}
+
+.ProjectContainer {
+    display: grid;
+    position: absolute;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto auto auto;
+    background-color: wheat;
+}

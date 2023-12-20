@@ -1,0 +1,71 @@
+.SocialMediaContainer {
+    display: flex;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    border-radius: 2vw;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.ProfileContainer {
+    background-color: wheat;
+    width: 90%;
+    padding: 1%;
+    height: 50%;
+    margin-left: 1%;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 9%;
+    border-radius: 2vw;
+    
+}
+
+.ProfilePictureContainer {
+    position: absolute;
+    background-color: transparent;
+    width: 22%;
+    height: 60%;
+    border-radius: 4vw;
+    margin-top: 6%;
+    margin-left: 5%;
+}
+
+.ProfilePicture {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%
+}
+
+
+.Username {
+    position: absolute;
+    font-family: 'Courier';
+    font-size: 2vw;
+    margin-left: 30%;
+    margin-top: 15%;
+    color: white;
+}
+
+.GoToInstaProfile {
+    width: 9%;
+    right: 0;
+    display: flex;
+    position: absolute;
+    top: 40%;
+    margin-right: 5%;
+}
+
+.HideSocialMedia {
+    opacity: 0;
+    transform: translateX(-100%);
+    filter: blur(5px);
+    transition: all 1s;
+}
+
+.Show {
+    opacity: 1;
+    transform: translateX(0);
+    filter: blur(0);
+}

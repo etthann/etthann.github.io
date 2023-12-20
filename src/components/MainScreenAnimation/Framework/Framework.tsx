@@ -1,6 +1,6 @@
 import observer from "../Obeserver";
 import React, { useEffect } from "react";
-import "../Framework/Framework.css";
+import "./Framework.css";
 import Expo from '../../../images/MainImages/svg/expo.svg'
 
 const Frameworks: React.FC = () => {
