@@ -5,15 +5,18 @@ import Frameworks from "../../components/MainScreenAnimation/Framework/Framework
 import AboutMe from "../../components/MainScreenAnimation/AboutMe/AboutMe";
 import Projects from "../../components/MainScreenAnimation/Projects/Projects";
 import Glitch from "../../components/StartingScreenAnimation/Glitch";
+import ContactMe from "../../components/MainScreenAnimation/ContactMe/ContactMe";
 
 const Main: React.FC = () => {
-
   Glitch();
 
   return (
     <div className="MainContainer">
+      <head>
+        <script src="https://www.google.com/recaptcha/enterprise.js?render=6LeI6zgpAAAAAH8-2E_BBSUpW9-zrmydlQpuWJ5X"></script>
+      </head>
 
-      {/* First Page */}
+      {/* First Page (Title screen)*/}
       <div className="Page">
         <div className="IntroWordsContainer">
           <h1>Hi, I am</h1>
@@ -32,10 +35,10 @@ const Main: React.FC = () => {
       </div>
       <div className="Spacing">&nbsp;</div>
 
-      {/* Second Page */}
+      {/* Second Page (Introduction About me and my socials)*/}
       <div className="Page">
         <section>
-          <AboutMe/>
+          <AboutMe />
         </section>
       </div>
 
@@ -49,8 +52,7 @@ const Main: React.FC = () => {
       <div className="Spacing">&nbsp;</div>
       <div className="Spacing">&nbsp;</div>
 
-
-      {/* Third Page */}
+      {/* Third Page (Logos and Frameworks that I know)*/}
       <div className="Page">
         <section>
           <Logo />
@@ -65,14 +67,22 @@ const Main: React.FC = () => {
       <div className="Spacing">&nbsp;</div>
       <div className="Spacing">&nbsp;</div>
       <div className="Spacing">&nbsp;</div>
+      <div className="Spacing">&nbsp;</div>
+      <div className="Spacing">&nbsp;</div>
 
-      {/* Fourth Page */}
+      {/* Fourth Page (Projects)*/}
       <div className="Page">
         <section>
-          <Projects/>
+          <Projects />
         </section>
       </div>
 
+      {/* Fifth Page (Contact Me) */}
+      <div className="Page">
+        <section>
+          <ContactMe />
+        </section>
+      </div>
     </div>
   );
 };

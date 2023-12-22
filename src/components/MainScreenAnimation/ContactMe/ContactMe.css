@@ -1,0 +1,183 @@
+.ContactContainer {
+  display: flex;
+  position: absolute;
+  background-color: #232222;
+  width: 90vw;
+  height: 50vw;
+  border-radius: 2vw;
+  margin-bottom: 15%;
+}
+
+.ContactMe {
+    display: flex;
+    text-align: center;
+    position: absolute;
+    margin-left: 35%;
+    font-family: 'Adelle Sans';
+    font-size: 4vw;
+}
+
+.Quote {
+  font-family: "Courier";
+  display: flex;
+  position: absolute;
+  width: 40%;
+  text-align: center;
+  font-size: 4vw;
+  margin: 1vw;
+  text-align: center;
+  justify-self: center;
+  margin-top: 10%;
+  margin-left: 5%;
+}
+
+.FormContainer {
+  position: absolute;
+  display: flex;
+  height: 80%;
+  width: 40%;
+  background-color: rgb(1, 23, 38);
+  right: 0;
+  margin-right: 5%;
+  margin-top: 6%;
+  border-radius: 2vw;
+  text-align: center;
+}
+
+.NameLabel {
+  display: flex;
+  position: absolute;
+  font-size: 2vw;
+  font-family: "Courier";
+  padding: 1px;
+  margin-top: 5%;
+  left: 5%;
+}
+.Name {
+  display: flex;
+  position: absolute;
+  width: 85%;
+  height: 6%;
+  background-color: rgb(249, 244, 227);
+  padding: 1%;
+  border-radius: 0.5vw;
+  margin-top: 10%;
+  left: 5%;
+}
+
+.EmailLabel {
+  font-size: 2vw;
+  font-family: "Courier";
+  padding: 1px;
+  position: absolute;
+  margin-top: 20%;
+  left: 5%;
+}
+
+.Email {
+  display: flex;
+  position: absolute;
+  width: 85%;
+  height: 6%;
+  background-color: rgb(249, 244, 227);
+  padding: 1%;
+  border-radius: 0.5vw;
+  margin-top: 25%;
+  left: 0;
+  margin-left: 5%;
+}
+
+.MessageLabel {
+  font-size: 2vw;
+  font-family: "Courier";
+  padding: 1px;
+  position: absolute;
+  left: 5%;
+  margin-top: 35%;
+}
+
+.Message {
+  display: flex;
+  position: absolute;
+  width: 85%;
+  height: 41%;
+  background-color: rgb(249, 244, 227);
+  border-radius: 0.5vw;
+  margin-top: 40%;
+  left: 0;
+  margin-left: 5%;
+  padding: 1%;
+}
+
+.Send {
+    display: flex;
+    position: absolute;
+    margin-top: 90%;
+    margin-left: 70%;
+    width: 20%;
+    height: 8%;
+    font-size: 2vw;
+    background-color: wheat;
+    border-radius: 1vw;
+}
+
+.ContactMeHide {
+    opacity: 0;
+    transform: translateY(100%);
+    filter: blur(5px);
+    transition: all 2s;
+}
+
+.Show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+
+.ContactMeTextHide {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 2s;
+}
+
+.Show {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.ContactMeTextInputHide {
+    opacity: 0;
+    transform: scale(1.2%) translateX(100%);
+    transition: all 1s;
+    filter: blur(5px);
+}
+
+.ContactMeTextInputHide:nth-child(2) {
+    transition-delay: 400ms;
+}
+.ContactMeTextInputHide:nth-child(3) {
+    transition-delay: 600ms;
+}
+.ContactMeTextInputHide:nth-child(4) {
+    transition-delay: 1000ms;
+}
+
+.Show {
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.ContactMeTextInputLabelHide {
+    opacity: 0;
+    transition: all 2s;
+    filter: blur(5px);
+    transform: translateX(100%);
+}
+
+.Show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}

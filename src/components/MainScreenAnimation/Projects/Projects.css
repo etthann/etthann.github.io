@@ -5,10 +5,82 @@
     margin-bottom: 80vw;
 }
 
-.ProjectContainer {
-    display: grid;
+.ProjectsContainer {
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    width: 100%;
     position: absolute;
-    grid-template-rows: auto;
-    grid-template-columns: auto auto auto auto;
-    background-color: wheat;
+    height: 50%;
+    margin-bottom: 35%;
+    align-items: center;
+    justify-content: space-evenly;
 }
+
+.Projects {
+    position: absolute;
+    width: 30%;
+    height: 88%;
+    margin-left: 10%;
+    border-radius: 2vw;
+    color: transparent;
+    text-align: center;
+    padding: 1%;
+    font-size: 1vw;
+    
+}
+
+.Projects:nth-child(1) {
+    margin-right: 77vw;
+    background-image: url('../../../images/MainImages/png/website.png');
+    transition-delay: 0s;
+}
+
+.Projects:nth-child(2) {
+    margin-right: 10vw;
+    background-image: url('../../../images/MainImages/png/lovelink.png');
+    transition-delay: 200ms;
+}
+
+.Projects:nth-child(3) {
+    margin-left: 67vw;
+    background-image: url('../../../images/MainImages/png/lavender-aesthetic-background.png');
+    transition-delay: 400ms;
+}
+
+.ProjectTitle {
+    font-weight: bold;
+}
+
+.Projects:hover {
+    background-image: none;
+    color: black;
+    animation: showtext 1s;
+    background-color: #D3D3D3;
+}
+
+@keyframes showtext {
+    0% {
+        background-color: transparent;
+    }
+    100% {
+        background-color: #D3D3D3;
+    }
+}
+
+
+.ClickHere4SourceCode {
+    color: black;
+    font-weight: bold;
+}
+
+
+.HideProjects {
+    opacity: 0;
+    transition: all 2s;
+}
+
+.Show {
+    opacity: 1;
+}
+
