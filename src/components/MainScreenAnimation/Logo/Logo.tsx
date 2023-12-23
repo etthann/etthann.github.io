@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 import observer from "../Obeserver";
-import "./Logo/Logo.css"
-import Java from './images/MainImages/png/java.png'
-import Javascript from './images/MainImages/png/js.png'
-import Python from './images/MainImages/png/python.png'
-import Typescript from './images/MainImages/png/typescript.png'
-import C from './images/MainImages/png/C.png'
+import "../Logo/Logo.css"
+import Java from '../../../images/MainImages/png/java.png'
+import Javascript from '../../../images/MainImages/png/js.png'
+import Python from '../../../images/MainImages/png/python.png'
+import Typescript from '../../../images/MainImages/png/typescript.png'
+import C from '../../../images/MainImages/png/C.png'
 
 const Logo: React.FC = () => {
     useEffect(() => {

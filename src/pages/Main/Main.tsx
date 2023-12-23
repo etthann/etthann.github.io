@@ -85,9 +85,7 @@ const Main: React.FC = () => {
       </div>
 
       <div className="Spacing">&nbsp;</div>
-      <div className="Spacing">&nbsp;</div>
-      <div className="Spacing">&nbsp;</div>
-      <div className="Spacing">&nbsp;</div>
+
 
     </div>
   );
