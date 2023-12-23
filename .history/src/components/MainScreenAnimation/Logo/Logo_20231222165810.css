@@ -16,7 +16,7 @@
     align-content: center;
     justify-content: center;
     position: absolute;
-    margin-top: 4%;
+    margin-top: 3%;
   }
   
   .Logo {
@@ -26,7 +26,6 @@
     border-radius: 1vw;
     background-color: #5a5a5a;
     margin: 0 2rem;
-    padding: 0 2%;
     width: 10%;
     margin-bottom: 20%;
   }
@@ -45,16 +44,15 @@
   }
   
   img {
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
     object-fit: contain;
   }
   
   .SkillsText {
     font-size: 5vw;
     font-family: "Adelle Sans";
-    margin-bottom: 170%;
+    margin-bottom: 160%;
     position: relative;
-  
   }
   

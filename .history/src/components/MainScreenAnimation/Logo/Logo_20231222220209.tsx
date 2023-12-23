@@ -48,7 +48,7 @@ const Logo: React.FC = () => {
             </div>
             <div className="Logo Hidden">
               <img
-                src={C}
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"
                 alt="C logo"
               />
             </div>

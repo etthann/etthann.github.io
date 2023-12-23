@@ -26,8 +26,7 @@
     border-radius: 1vw;
     background-color: #5a5a5a;
     margin: 0 2rem;
-    padding: 0 2%;
-    width: 10%;
+    width: 12%;
     margin-bottom: 20%;
   }
   
@@ -45,7 +44,7 @@
   }
   
   img {
-    width: 100%;
+    width: 90%;
     height: 100%;
     object-fit: contain;
   }
@@ -53,8 +52,7 @@
   .SkillsText {
     font-size: 5vw;
     font-family: "Adelle Sans";
-    margin-bottom: 170%;
+    margin-bottom: 160%;
     position: relative;
-  
   }
   

@@ -2,10 +2,7 @@ import React, { useEffect } from "react";
 import observer from "../Obeserver";
 import "../Logo/Logo.css"
 import Java from '../../../images/MainImages/svg/java.svg'
-import Javascript from '../../../images/MainImages/svg/javascript.svg'
-import Python from '../../../images/MainImages/svg/python.svg'
-import Typescript from '../../../images/MainImages/svg/typescript.svg'
-import C from '../../../images/MainImages/svg/c.svg'
+import Javascript
 
 const Logo: React.FC = () => {
     useEffect(() => {
@@ -30,25 +27,25 @@ const Logo: React.FC = () => {
             </div>
             <div className="Logo Hidden">
               <img
-                src={Python}
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
                 alt="Python Logo"
               />
             </div>
             <div className="Logo Hidden">
               <img
-                src={Javascript}
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
                 alt="Javascript Logo"
               />
             </div>
             <div className="Logo Hidden">
               <img
-                src={Typescript}
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
                 alt="Typescript Logo"
               />
             </div>
             <div className="Logo Hidden">
               <img
-                src={C}
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"
                 alt="C logo"
               />
             </div>

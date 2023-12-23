@@ -1,0 +1,151 @@
+.DiscordContainer {
+    position: absolute;
+    width: 100%;
+    height: 68%;
+    background-color: transparent;
+    border-end-end-radius: 2vw;
+    border-end-start-radius: 2vw;
+    bottom: 0;
+
+}
+
+.DiscordContainer {
+    background-color: wheat;
+    width: 90%;
+    padding: 1%;
+    height: auto;
+    margin-left: 4%;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 20%;
+    border-radius: 2vw;
+}
+
+.DiscordPfp {
+    width: 20%;
+    border-radius: 60%;
+    padding-top: 5%;
+    padding-left: 1%;
+    border-width: 10%;
+    height: 30%;
+}
+
+.DiscordInfoContainer {
+    position: relative;
+    display: flex;
+    background-color: transparent;
+}
+
+
+
+.GlobalName {
+    margin-top: 7%;
+    margin-left: 24%;
+    font-size: 2vw;
+    font-family: 'Adelle Sans';
+    position: absolute;
+    color: black;
+}
+
+.UserName {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    margin-top: 15%;
+    margin-left: 24%;
+    color: black;
+}
+
+.circle {
+    display: flex;
+    position: absolute;
+    width: 1.6vw;
+    height: 1.6vw;
+    border-radius: 50%;
+    background-color: rgb(48, 48, 48);  
+    left: 4.5vw;
+    top: 5.3vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.status.online {
+    position: absolute;
+    width: 1.11vw;
+    height: 1.112vw;
+    border-radius: 1vw;
+    background-color: green;
+}
+
+.status.dnd {
+    position: absolute;
+    width: 1.11vw;
+    height: 1.1vw;
+    border-radius: 1vw;
+    background-color: red;
+}
+
+.status.idle {
+    position: absolute;
+    width: 1.11vw;
+    height: 1.1vw;
+    border-radius: 1vw;
+    background-color: yellow;
+}
+
+.status.offline {
+    width: 1.11vw;
+    position: absolute;
+    height: 1.1vw;
+    border-radius: 1vw;
+    background-color: rgb(114, 112, 112);
+}
+
+.SpotifyContainer {
+    position: absolute;
+    font-size: 1vw;
+    margin-top: 7.3vw;
+    text-align: center;
+    background-color: transparent;
+    width: 100%;
+}
+
+.AlbumCover {
+    position: absolute;
+    margin-left: 10%;
+    padding-top: 2%;
+}
+
+.CopyDiscordTag {
+    position: absolute;
+    background-color: transparent;
+    border: 0;
+    width: 25%;
+    margin-left: 100%;
+    margin-top: 1%;
+    z-index: 1;
+}
+
+.CopyDiscordTag:hover {
+    transform: scale(1.5)
+}
+
+
+.SongText {
+    color: turquoise;
+    font-weight: bold;
+}
+
+.DiscordHide {
+    opacity: 0;
+    transform: translateX(-100%);
+    filter: blur(5px);
+    transition: all 1s;
+}
+
+.Show {
+    opacity: 1;
+    transform: translateX(0);
+    filter: blur(0);
+}
+

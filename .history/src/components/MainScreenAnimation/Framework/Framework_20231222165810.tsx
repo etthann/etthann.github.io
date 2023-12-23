@@ -2,7 +2,6 @@ import observer from "../Obeserver";
 import React, { useEffect } from "react";
 import "./Framework.css";
 import Expo from '../../../images/MainImages/svg/expo.svg'
-import ReactLogo from '../../../images/MainImages/svg/react.svg'
 
 const Frameworks: React.FC = () => {
   useEffect(() => {
@@ -21,7 +20,7 @@ const Frameworks: React.FC = () => {
       <div className="FrameworksContainer">
         <div className="Frameworks Hide">
           <img
-            src={ReactLogo}
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
             alt="React Logo"
           />
         </div>

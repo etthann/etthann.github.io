@@ -5,7 +5,7 @@ import Java from '../../../images/MainImages/svg/java.svg'
 import Javascript from '../../../images/MainImages/svg/javascript.svg'
 import Python from '../../../images/MainImages/svg/python.svg'
 import Typescript from '../../../images/MainImages/svg/typescript.svg'
-import C from '../../../images/MainImages/svg/c.svg'
+import C from '../../../'
 
 const Logo: React.FC = () => {
     useEffect(() => {
@@ -48,7 +48,7 @@ const Logo: React.FC = () => {
             </div>
             <div className="Logo Hidden">
               <img
-                src={C}
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"
                 alt="C logo"
               />
             </div>
