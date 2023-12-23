@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5c192b57.css",
+    "main.js": "/static/js/main.a76fd6ad.js",
+    "static/js/787.88dfdeb5.chunk.js": "/static/js/787.88dfdeb5.chunk.js",
+    "static/media/lavender-aesthetic-background.png": "/static/media/lavender-aesthetic-background.f5b1572e8d0f698842ba.png",
+    "static/media/website.png": "/static/media/website.d2956367cb83b70f5be8.png",
+    "static/media/black.png": "/static/media/black.576c0479d0395eb8f992.png",
+    "static/media/lovelink.png": "/static/media/lovelink.67f2c144b01dc7c9d79a.png",
+    "static/media/python_logo.png": "/static/media/python_logo.f0117c0b9984609e82e4.png",
+    "static/media/python.png": "/static/media/python.6a5cbc319ab3ddf8ef92.png",
+    "static/media/java.png": "/static/media/java.ddf8676bd569fe01ab44.png",
+    "static/media/copy.png": "/static/media/copy.135952abec56e8e45843.png",
+    "static/media/run_in_terminal.png": "/static/media/run_in_terminal.2aefeafde8d5bf863f15.png",
+    "static/media/instagram.svg": "/static/media/instagram.c83e628eea4e83e0d2b6c8e54910510c.svg",
+    "static/media/react.png": "/static/media/react.bc95ddb0a9f5ff0adff7.png",
+    "static/media/typescript.png": "/static/media/typescript.af108db04a54d784da9b.png",
+    "static/media/js.png": "/static/media/js.3dfb665e058d08c99f28.png",
+    "static/media/linkedinpfp.png": "/static/media/linkedinpfp.a77261fff8045d299fb7.png",
+    "static/media/github.svg": "/static/media/github.41bba81c8755d1687deabf6a58dd154b.svg",
+    "static/media/external_link.svg": "/static/media/external_link.95f25bef5e5bd8e1b7e2b9980d6c7f2f.svg",
+    "static/media/discord.svg": "/static/media/discord.99f0863429baa34cfbbd14bbc4b6d160.svg",
+    "index.html": "/index.html",
+    "static/media/linkedin.svg": "/static/media/linkedin.ada11cda991129bc91b79d2c7cee1066.svg",
+    "main.5c192b57.css.map": "/static/css/main.5c192b57.css.map",
+    "main.a76fd6ad.js.map": "/static/js/main.a76fd6ad.js.map",
+    "787.88dfdeb5.chunk.js.map": "/static/js/787.88dfdeb5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5c192b57.css",
+    "static/js/main.a76fd6ad.js"
+  ]
+}
