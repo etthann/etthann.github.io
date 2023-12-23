@@ -1,8 +1,8 @@
 import observer from "../Obeserver";
 import React, { useEffect } from "react";
 import "./Framework.css";
-import Expo from '../../../images/MainImages/svg/expo.svg'
-import ReactLogo from '../../../images/MainImages/svg/react.svg'
+import Expo from '../../../images/MainImages/png/expo.png'
+import ReactLogo from '../../../images/MainImages/png/react.png'
 
 const Frameworks: React.FC = () => {
   useEffect(() => {
