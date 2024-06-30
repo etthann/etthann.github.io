@@ -1,0 +1,3 @@
+const Welcome: React.FC = () => {
+    
+}

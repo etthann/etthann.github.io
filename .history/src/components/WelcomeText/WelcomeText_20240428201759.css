@@ -1,0 +1,8 @@
+.welcomeContainer {
+    display: flex;
+    background-color: black;
+    width: 50vw;
+    height: 40vw;
+    align-items: center;
+    justify-content: center;
+}

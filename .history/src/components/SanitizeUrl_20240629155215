@@ -1,0 +1,8 @@
+function sanitizeUrl(url) {
+    // Basic example of sanitization, you might want to use a library for more comprehensive checks
+    if (url.startsWith('http://') || url.startsWith('https://')) {
+      return url;
+    } else {
+      return '#';
+    }
+}

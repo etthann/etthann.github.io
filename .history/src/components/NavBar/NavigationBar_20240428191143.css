@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    height: 5vh;
+    background-color: black;
+  }
+  .text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* or space-around */
+    background-color: black;
+    color: white;
+    width: 100%; /* to make sure the items spread across the full width of the container */
+  }

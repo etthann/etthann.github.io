@@ -1,0 +1,8 @@
+.ResumeButtonContainer {
+    display: flex;
+    position: absolute;
+    background-color: black;
+    width: 16vw;
+    height: 4vw;
+    border-radius: 3vw;
+}

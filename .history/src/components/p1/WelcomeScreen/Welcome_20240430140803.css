@@ -1,0 +1,38 @@
+.WelcomeContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 75vh;
+    background-color: transparent;
+}
+
+.Welcome {
+    display: flex;
+    width: 70vw;
+    height: 20vw;
+    background-color: transparent;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+    font-size: 1.8vw;
+    margin-bottom: 1vw;
+    position: absolute;
+}
+
+.AlternatingText {
+    margin-bottom: 0vw;
+    font-size: 4vw;
+}
+
+.cursor {
+    width: 1ch;
+    visibility: visible;
+    animation: blink 0.5s infinite;
+  }
+  
+  @keyframes blink {
+    0%, 100% {visibility: visible;}
+    50% {visibility: hidden;}
+  }

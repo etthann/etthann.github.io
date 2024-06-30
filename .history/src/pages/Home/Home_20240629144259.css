@@ -1,0 +1,12 @@
+/* Home.css */
+.container-fluid {
+  height: 100vh; /* Make the container fill the entire viewport height */
+  width: 100%; /* Use 100% instead of 100vw to avoid issues with the scrollbar */
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  width: 100vw;
+}

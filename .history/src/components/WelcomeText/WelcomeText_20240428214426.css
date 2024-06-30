@@ -1,0 +1,30 @@
+.welcomeContainer {
+  display: flex;
+  background-color: black;
+  width: 50vw;
+  height: 30vw;
+  align-self: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.cursor {
+  width: 1ch;
+  visibility: visible;
+  animation: blink 0.5s infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    visibility: visible;
+  }
+  50% {
+    visibility: hidden;
+  }
+}
+
+.animatedText {
+    display: inline-block;
+    text-align: center;
+}

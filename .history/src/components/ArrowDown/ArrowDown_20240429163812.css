@@ -1,0 +1,13 @@
+.arrowContainer {
+    display: flex;
+    background-color: black;
+    width: 100vw;
+    height: 13vh;
+
+}
+
+.arrowContainer img {
+    width: 100%;
+    filter: invert(1);
+
+}

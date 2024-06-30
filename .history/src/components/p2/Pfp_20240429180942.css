@@ -1,0 +1,7 @@
+.pfpContainer {
+    display: flex;
+    width: 20vw;
+    height: 25vw;
+    background-color: black;
+    border-radius: 5vw;
+}

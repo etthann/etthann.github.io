@@ -1,0 +1,18 @@
+.arrowContainer {
+    display: flex;
+    width: 100vw;
+    height: 18vh;
+    justify-content: center;
+
+}
+
+.buttonContainer {
+    display: flex;
+    border-radius: 10vw;
+    margin-bottom: 5vh;
+}
+
+.buttonContainer img {
+    width: 90%;
+    filter: invert(1);
+}

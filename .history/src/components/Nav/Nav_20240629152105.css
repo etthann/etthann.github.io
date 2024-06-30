@@ -1,0 +1,8 @@
+.custom-nav {
+  transition: all 0.3s ease-in-out;
+}
+
+.custom-nav:hover {
+  background-color: #ffffff; /* Change to your desired hover color */
+  padding: 5rem 4rem;
+}

@@ -1,0 +1,13 @@
+.ReusmeButtonContainer {
+    display: flex;
+    width: 16vw;
+    height: 4vw;
+    background-color: pink;
+    position: absolute;
+    border-radius: 3vw;
+    margin: 48% 0 0 45%;
+}
+
+.ResumeButton {
+    
+}

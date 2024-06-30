@@ -1,0 +1,48 @@
+.WelcomeContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 75vh;
+    background-color: transparent;
+}
+
+.Welcome {
+    display: flex;
+    width: 70vw;
+    height: 20vw;
+    background-color: transparent;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+    font-size: 2.5vw;
+    margin-bottom: 1vw;
+
+}
+
+.AlternatingText {
+    margin-top: 1vw;
+    font-size: 5vw;
+    position: absolute;
+}
+
+.Welcome p:nth-child(0) {
+    font-size: 2vw;
+}
+
+.Welcome p:nth-child(3) {
+    font-size: 1.3vw;
+    margin-top: 13%;
+}
+
+.cursor {
+    width: 1ch;
+    visibility: visible;
+    animation: blink 0.5s infinite;
+  }
+  
+  @keyframes blink {
+    0%, 100% {visibility: visible;}
+    50% {visibility: hidden;}
+  }

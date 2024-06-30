@@ -1,0 +1,11 @@
+.arrowContainer {
+    background-color: black;
+    width: 5vw;
+    height: 5vw;
+    align-self: center;
+}
+
+.arrowContainer img {
+    width: 100%;
+    filter: invert(1);
+}

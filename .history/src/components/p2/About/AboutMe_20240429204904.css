@@ -1,0 +1,6 @@
+.AboutContainer {
+    display: flex;
+    background-color: black;
+    width: 50%;
+    height: 50%;
+}

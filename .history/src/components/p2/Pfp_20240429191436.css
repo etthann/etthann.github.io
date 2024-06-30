@@ -1,0 +1,18 @@
+.pfpContainer {
+    display: flex;
+    width: 20vw;
+    height: 20vw;
+    border-radius: 10vw;
+    background-color: rgb(246, 160, 230);
+    position: absolute;
+    right: 0;
+    margin: 15% ;
+    align-items: center;
+    justify-content: center;
+}
+
+.pfpContainer img {
+    width: 95%;
+    height: 95%;
+    border-radius: 10vw;
+}

@@ -1,0 +1,15 @@
+@media (max-width: 768px) {
+  .navbar-nav .nav-item .nav-link {
+    font-size: 14px; /* Smaller font size for smaller screens */
+  }
+}
+
+.nav-link:hover {
+  font-size: 1.2em; /* Adjust the value as needed to make the text bigger */
+  color: #007bff; /* Example color: Bootstrap's primary blue. Change as desired */
+}
+
+.home-link:hover {
+    font-size: 1.2em; /* Adjust the value as needed to make the text bigger */
+    color: #007bff; /* Example color: Change as desired */
+  }

@@ -1,0 +1,13 @@
+/* Home.css */
+.container-fluid {
+    height: 100vh; /* Make the container fill the entire viewport height */
+    display: flex;
+    align-items: center; /* Center vertically */
+  }
+  
+  .navbar {
+    width: 100%; /* Make the navbar fill the width of its container */
+    display: flex;
+    justify-content: center; /* Center the content of the navbar */
+    padding: 4rem; /* Adjust padding as needed */
+  }

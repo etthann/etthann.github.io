@@ -1,0 +1,47 @@
+import React from "react";
+import { Link } from "react-router-dom";
+import ScrollToPage from "../Scroll";
+
+export default function Nav() {
+  return (
+    <nav className="navbar navbar-expand-lg navbar-light bg-light p-4 custom-nav">
+      <Link
+        className="text-dark text-decoration-none"
+        to="/"
+        onClick={() => {
+          ScrollToPage({ page: "top" });
+        }}
+      >
+        <span className="h4 font-weight-normal">Ethan Ieong</span>
+      </Link>
+      <div className="mx-auto ">
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav mr-auto">
+            <li className="nav-item active me-4">
+              <Link
+                className="text-dark text-decoration-none"
+                to="about"
+                onClick={() => {
+                  ScrollToPage({ page: "about" });
+                }}
+              >
+                About
+              </Link>
+            </li>
+            <li className="nav-item active me-4">
+              <Link
+                className="text-dark text-decoration-none fs-5"
+                to="projects"
+                onClick={() => {
+                  ScrollToPage({ page: "projects" });
+                }}
+              >
+                Projects
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  );
+}

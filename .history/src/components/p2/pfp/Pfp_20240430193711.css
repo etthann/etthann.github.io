@@ -1,0 +1,14 @@
+.pfpContainer {
+    display: flex;
+    width: 35vw;
+    height: 40vw;
+    position: absolute;
+    margin: 5% 0 0 5%;
+    align-items: center;
+    justify-content: center;
+}
+
+.pfpContainer img {
+    width: 95%;
+    height: 95%;
+}

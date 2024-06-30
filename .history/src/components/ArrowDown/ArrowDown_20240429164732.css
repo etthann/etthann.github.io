@@ -1,0 +1,17 @@
+.arrowContainer {
+    display: flex;
+    background-color: black;
+    width: 100vw;
+    height: 18vh;
+    justify-content: center;
+
+}
+
+.buttonContainer {
+    
+}
+
+.buttonContainer img {
+    width: 100%;
+    filter: invert(1);
+}

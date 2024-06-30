@@ -1,0 +1,9 @@
+.arrowContainer {
+    background-color: black;
+    width: 5%;
+    height: 2vh;
+}
+
+.arrowContainer img {
+    width: 100%;
+}

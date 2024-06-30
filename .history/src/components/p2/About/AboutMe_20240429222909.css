@@ -1,0 +1,20 @@
+.AboutContainer {
+    display: flex;
+    background-color: black;
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    margin-top: 10%;
+    margin-right: 5%;
+    right: 0;
+    flex-direction: column;
+    color: white;
+}
+
+.AboutContainer p {
+    text-decoration: underline;
+}
+
+.Text {
+    color: white;
+}

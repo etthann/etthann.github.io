@@ -1,0 +1,9 @@
+/* Home.css */
+.container-fluid {
+  height: 100vh; /* Make the container fill the entire viewport height */
+  width: 100vw;
+}
+
+.navbar {
+  width: 100vw;
+}

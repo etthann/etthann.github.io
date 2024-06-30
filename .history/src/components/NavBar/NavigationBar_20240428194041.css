@@ -1,0 +1,28 @@
+.navContainer {
+  position: relative;
+  display: flex;
+  width: 100vw;
+  overflow: hidden; /* This is to prevent the blur effect from bleeding out */
+  background-color: black;
+  height: 8vh;
+  border-radius: 0 0 0.5vw 0.5vw;
+  justify-content: row;
+}
+
+.navText {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 30%;
+    align-self: center;
+}
+
+.navSocials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: aqua;
+    width: 20%;
+    margin-left: auto;
+    align-content: center;
+}

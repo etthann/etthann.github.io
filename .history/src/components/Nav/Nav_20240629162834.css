@@ -1,0 +1,5 @@
+@media (max-width: 768px) {
+    .navbar-nav .nav-item .nav-link {
+      font-size: 14px; /* Smaller font size for smaller screens */
+    }
+  }
