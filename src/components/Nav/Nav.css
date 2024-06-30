@@ -6,9 +6,21 @@
 
 .navbar {
   height: 10vh;
+  width: 100vw;
+  overflow-x: hidden;
+  transition: top 0.3s ease-in-out;
+
+}
+
+.nav-link {
+  transition: font-size 1s ease, color 0.3s ease; /* Add this line for smooth transition */
+  color: white;
 }
 
 .nav-link:hover {
-  font-size: 1.2em; /* Adjust the value as needed to make the text bigger */
-  color: #007bff; /* Example color: Bootstrap's primary blue. Change as desired */
+  font-size: 1.2em;
+}
+
+.hide-navbar {
+  top: -100%; /* Adjust based on the height of your navbar */
 }
