@@ -1,1 +1,0 @@
-const WelcomeText: React.FC = 

@@ -1,3 +1,0 @@
-const AboutPage: React.FC = ()=> {
-    
-}

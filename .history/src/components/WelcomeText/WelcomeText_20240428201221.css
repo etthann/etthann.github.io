@@ -1,9 +1,0 @@
-.welcomeContainer {
-    display: flex;
-    background-color: black;
-    width: 50vw;
-    height: 50vw;
-    align-self: center;
-    justify-content: center;
-    position: absolute;
-}

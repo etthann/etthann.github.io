@@ -1,3 +1,0 @@
-const ContactButton: React.FC = ()=> {
-    
-}
