@@ -1,13 +1,70 @@
-.h-background {
-    background-image: url("../../photos/background/black-hole.jpg"); /* Adjust the path as necessary */
-    background-size: cover; /* Cover the entire area */
-    background-position: center; /* Center the background image */
-    height: 100vh;
-    width: 100vw;
-    overflow-x:hidden;
+.home-background {
+  background-image: url("../../photos/background/black-hole.jpg"); /* Adjust the path as necessary */
+  background-size: cover; /* Cover the entire area */
+  background-position: center; /* Center the background image */
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 .home {
-  height: 200vh; /* Adjust based on your needs */
+  height: 100vh; /* Adjust based on your needs */
   overflow-x: hidden;
+  opacity: 0.9;
+}
+
+.home-importantText {
+  color: rgb(245, 255, 98);
+}
+
+.home-header {
+  margin-top: 40%;
+  color: #ffffff;
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.home-astronaut {
+  margin-left: 20%;
+  margin-top: 1%;
+}
+
+.arrow-down {
+  /* Initial state */
+  color: white; /* Replace 'initialColor' with the actual color */
+  transition: transform 0.5s ease, color 0.5s ease; /* Smooth transition for size and color */
+  display: inline-block;
+}
+
+.arrow-down:hover {
+  /* Hover state */
+  color: white; /* Replace 'hoverColor' with the new color you want */
+  transform: scale(1.2); /* Corrected scale value to be unitless */
+  opacity: 1;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10%);
+  }
+  60% {
+    transform: translateY(-20%);
+  }
+}
+
+.arrow-bounce {
+  animation: bounce 4s infinite;
+}
+
+.arrow-bounce:hover {
+  animation-play-state: paused;
 }

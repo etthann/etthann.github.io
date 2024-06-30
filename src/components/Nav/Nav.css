@@ -6,7 +6,7 @@
 
 .navbar {
   height: 10vh;
-  width: 100vw;
+  width: 100%;
   overflow-x: hidden;
   transition: top 0.3s ease-in-out;
 
