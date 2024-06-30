@@ -32,6 +32,7 @@ export default function Nav() {
       };
     }
   }, [controlNavbar, lastScrollY]);
+  
   return (
     <nav
       className={`navbar navbar-expand-lg navbar-light bg-dark p-4 navbar-border rounded-bottom ${
