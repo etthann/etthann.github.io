@@ -1,4 +1,0 @@
-const Scroll: React.FC = () => {
-
-
-}
