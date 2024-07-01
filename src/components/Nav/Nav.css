@@ -1,13 +1,8 @@
-@media (max-width: 768px) {
-  .navbar-nav .nav-item .nav-link {
-    font-size: 14px; /* Smaller font size for smaller screens */
-  }
-}
-
 .navbar {
-  height: 10vh;
+  height: 10%;
   width: 100%;
   overflow-x: hidden;
+  overflow-y: hidden;
   transition: top 0.3s ease-in-out;
 
 }
@@ -19,8 +14,4 @@
 
 .nav-link:hover {
   font-size: 1.2em;
-}
-
-.hide-navbar {
-  top: -100%; /* Adjust based on the height of your navbar */
 }

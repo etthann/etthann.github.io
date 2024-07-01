@@ -4,17 +4,17 @@ import Nav from "../../components/Nav/Nav";
 import "./Home.css";
 import Welcome from "../../components/Welcome/Welcome";
 import Intro from "../../components/Intro/Intro";
+import Footer from "../../components/Footer/Footer";
 
 const Home: React.FC = () => {
   return (
     <div className="container-fluid overflow-auto home-background gx-0">
       <Nav />
       <Welcome />
-      <br />
-      <br />
-      <br />
-      <br />
       <Intro />
+      <br/>
+      <Footer/>
+
     </div>
   );
 };
