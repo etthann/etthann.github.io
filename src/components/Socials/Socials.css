@@ -1,0 +1,13 @@
+/* Step 1: Define a CSS class for the anchor tags */
+.anchor-hover-effect {
+  margin-top: 5%;
+}
+
+a.anchor-hover-effect:hover svg {
+  transform: scale(1.3); 
+  transition: transform 0.3s ease; 
+}
+
+.socials-list {
+  padding-top: 1%;
+}
