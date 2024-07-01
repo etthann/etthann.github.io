@@ -1,52 +1,12 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-import ScrollToPage from "../Scroll";
 import "./Nav.css";
 
 export default function Nav() {
-  const [showNavbar, setShowNavbar] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
-
-  const controlNavbar = () => {
-    if (typeof window !== "undefined") {
-      // Check the current scroll position to determine scroll direction
-      if (window.scrollY < lastScrollY) {
-        // Scrolling up
-        setShowNavbar(true);
-      } else {
-        // Scrolling down
-        setShowNavbar(false);
-      }
-      // Update the last scroll position
-      setLastScrollY(window.scrollY);
-    }
-  };
-
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      window.addEventListener("scroll", controlNavbar);
-
-      return () => {
-        window.removeEventListener("scroll", controlNavbar);
-      };
-    }
-  }, [controlNavbar, lastScrollY]);
-  
   return (
-    <nav
-      className={`navbar navbar-expand-lg navbar-light bg-dark p-4 navbar-border rounded-bottom ${
-        showNavbar ? "" : "hide-navbar"
-      }`}
-    >
-      {" "}
-      <Link
-        className="text-light text-decoration-none nav-link"
-        to="/"
-        onClick={() => {
-          ScrollToPage({ page: "top" });
-        }}
-      >
+    <nav className="navbar navbar-expand-lg navbar-light bg-dark p-4 navbar-border rounded-bottom ">
+      <Link className="text-light text-decoration-none nav-link" to="/">
         <span className="h4 font-weight-normal">Ethan Ieong</span>
       </Link>
       <button
@@ -68,9 +28,6 @@ export default function Nav() {
                 <Link
                   className="nav-link text-light text-decoration-none"
                   to="/"
-                  onClick={() => {
-                    ScrollToPage({ page: "top" });
-                  }}
                 >
                   Home
                 </Link>
@@ -80,9 +37,6 @@ export default function Nav() {
                 <Link
                   className="nav-link text-light text-decoration-none"
                   to="about"
-                  onClick={() => {
-                    ScrollToPage({ page: "about" });
-                  }}
                 >
                   About
                 </Link>
@@ -91,9 +45,6 @@ export default function Nav() {
                 <Link
                   className="nav-link text-light text-decoration-none"
                   to="projects"
-                  onClick={() => {
-                    ScrollToPage({ page: "projects" });
-                  }}
                 >
                   Projects
                 </Link>
@@ -102,9 +53,6 @@ export default function Nav() {
                 <Link
                   className="nav-link text-light text-decoration-none"
                   to="contact"
-                  onClick={() => {
-                    ScrollToPage({ page: "contact" });
-                  }}
                 >
                   Contact Me
                 </Link>

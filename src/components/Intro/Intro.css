@@ -1,0 +1,40 @@
+.intro {
+  height: 90vh;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.row {
+    width: 100%;
+}
+
+.intro-header {
+  color: white;
+  font-weight: bold;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+    margin-bottom: 10%;
+}
+
+.intro-subtitle {
+  color: rgb(245, 255, 98);
+}
+
+.intro-text {
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  width: 100%;
+}
+
+.astronaut-selfie {
+    margin-left: 75%;
+    width: 25%;
+    height: 100%;
+    transform: scaleX(-1);
+}
+
+.find-me {
+    color: white;
+    font-weight: bold;
+}
