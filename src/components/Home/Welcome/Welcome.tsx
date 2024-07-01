@@ -1,5 +1,5 @@
 import Typewriter from "typewriter-effect";
-import astronautImage from "../../photos/background/astronaut.png";
+import astronautImage from "../../../photos/Home/astronaut.png";
 import React from "react";
 import './Welcome.css'
 
