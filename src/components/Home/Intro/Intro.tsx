@@ -1,7 +1,7 @@
 import React from "react";
 import "./Intro.css";
-import astronautSelfie from "../../photos/background/astronaut-selfie.png";
-import Socials from "../Socials/Socials";
+import astronautSelfie from "../../../photos/Home/astronaut-selfie.png";
+import Socials from "../../Socials/Socials";
 
 export default function Intro() {
   return (

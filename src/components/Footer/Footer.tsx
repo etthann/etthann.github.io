@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import Initials from "../../photos/monogram-inital.svg";
+import Initials from "../../photos/Home/monogram-inital.svg";
 import Socials from "../Socials/Socials";
 
 export default function Footer() {

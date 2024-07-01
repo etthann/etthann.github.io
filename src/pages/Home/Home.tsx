@@ -2,8 +2,8 @@
 import React from "react";
 import Nav from "../../components/Nav/Nav";
 import "./Home.css";
-import Welcome from "../../components/Welcome/Welcome";
-import Intro from "../../components/Intro/Intro";
+import Welcome from "../../components/Home/Welcome/Welcome";
+import Intro from "../../components/Home/Intro/Intro";
 import Footer from "../../components/Footer/Footer";
 
 const Home: React.FC = () => {
@@ -12,9 +12,8 @@ const Home: React.FC = () => {
       <Nav />
       <Welcome />
       <Intro />
-      <br/>
-      <Footer/>
-
+      <br />
+      <Footer />
     </div>
   );
 };
