@@ -1,5 +1,5 @@
-.home-background {
-  background-image: url("../../photos/Home/black-hole.jpg"); /* Adjust the path as necessary */
+.main-screen-background {
+  background-image: url("../photos/Home/black-hole.jpg"); /* Adjust the path as necessary */
   background-size: cover; /* Cover the entire area */
   background-position: center; /* Center the background image */
   height: 100vh;

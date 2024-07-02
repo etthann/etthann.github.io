@@ -1,10 +1,19 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "./Nav.css";
 import Socials from "../Socials/Socials";
 
 export default function Nav() {
+  const location = useLocation();
+
+  const handleLinkClick = (e: { preventDefault: () => void }, path: any) => {
+    if (location.pathname === `/${path}`) {
+      e.preventDefault();
+      window.location.reload();
+    }
+  };
+
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-dark p-4 navbar-border rounded-bottom ">
       <Link className="text-light text-decoration-none nav-link" to="/">
@@ -29,6 +38,7 @@ export default function Nav() {
                 <Link
                   className="nav-link text-light text-decoration-none"
                   to="/"
+                  onClick={(e) => handleLinkClick(e, "/")}
                 >
                   Home
                 </Link>
@@ -37,7 +47,8 @@ export default function Nav() {
               <li className="nav-item active me-4">
                 <Link
                   className="nav-link text-light text-decoration-none"
-                  to="about"
+                  to="/about"
+                  onClick={(e) => handleLinkClick(e, "about")}
                 >
                   About
                 </Link>
@@ -45,7 +56,8 @@ export default function Nav() {
               <li className="nav-item active me-4">
                 <Link
                   className="nav-link text-light text-decoration-none"
-                  to="projects"
+                  to="/projects"
+                  onClick={(e) => handleLinkClick(e, "projects")}
                 >
                   Projects
                 </Link>
@@ -53,7 +65,8 @@ export default function Nav() {
               <li className="nav-item active me-4">
                 <Link
                   className="nav-link text-light text-decoration-none"
-                  to="contact"
+                  to="/contact"
+                  onClick={(e) => handleLinkClick(e, "contact")}
                 >
                   Contact Me
                 </Link>
@@ -63,7 +76,7 @@ export default function Nav() {
         </div>
       </div>
       <div className="mx-2">
-        <Socials/>
+        <Socials />
       </div>
     </nav>
   );
