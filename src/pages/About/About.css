@@ -1,0 +1,33 @@
+.about-header {
+  margin-top: 10% !important;
+}
+
+.header-color {
+  color: rgb(245, 255, 98);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.about-text {
+  margin-top: 1% !important;
+}
+
+.header-text {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: white;
+}
+
+.astronaut-reading {
+  margin-left: 190% !important;
+}
+
+li.borderless {
+  border-top: 0 none;
+}
+
+.skill-container {
+  overflow-y: hidden;
+  height: 10vh;
+  width: 100%;
+}

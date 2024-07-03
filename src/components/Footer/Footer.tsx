@@ -13,7 +13,7 @@ export default function Footer() {
             <img src={Initials} alt="rocket moon" />
           </div>
         </div>
-        <div className="col-md-4 d-flex align-items-center text-light creator">
+        <div className="col-md-4 d-flex align-items-center text-light creator fs-5">
           <span>Created By Ethan Ieong</span>
         </div>
         <div className="col d-flex align-items-center footer-socials">
