@@ -12,7 +12,6 @@ const Home: React.FC = () => {
       <Nav />
       <Welcome />
       <Intro />
-      <br />
       <Footer />
     </div>
   );
