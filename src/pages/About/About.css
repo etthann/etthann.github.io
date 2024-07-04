@@ -1,5 +1,6 @@
+
 .about-header {
-  margin-top: 10% !important;
+  margin-top: 7% !important;
 }
 
 .header-color {
@@ -27,7 +28,6 @@ li.borderless {
 }
 
 .skill-container {
-  overflow-y: hidden;
-  height: 10vh;
   width: 100%;
 }
+
