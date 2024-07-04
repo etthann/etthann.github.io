@@ -31,7 +31,7 @@ const AboutPage: React.FC = () => {
   );
 
   return (
-    <div className="container-fluid overflow-x-hidden  main-screen-background gx-0">
+    <div className="container-fluid overflow-x-hidden main-screen-background gx-0 about-container">
       <Nav />
       <div className="row mt-5 about-header">
         <div className="col-md-4 offset-md-2 fs-1 header-color fw-bold">
@@ -43,24 +43,21 @@ const AboutPage: React.FC = () => {
           I'm currently pursing a bachelor in computer engineering and I am in
           my second year of engineering. <br /> <br />
           Apart from coding and building things, I enjoy many other activites!
-          <br />
-          <br />
           <ul className="bg-transparent">{activitiesList}</ul>
           <div className="astronaut-reading">
             <img src={AstronautReading} alt="Astronaut Reading" />
           </div>
         </div>
       </div>
-      <div className="row mt-5 about-header gx-0">
+      <div className="row about-header gx-0">
         <div className="col-md-12 d-flex justify-content-center align-items-center fs-1 header-color fw-bold">
           <p>Skills and Frameworks</p>
         </div>
       </div>
-      <div className="row mt-5 gx-0 skill-container">
-        <div className="col-md-4">
-          <SkillsContainer />
-        </div>
-      </div>
+      <SkillsContainer />
+      <br />
+      <br />
+      <Footer />
     </div>
   );
 };

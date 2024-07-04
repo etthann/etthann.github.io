@@ -15,38 +15,38 @@ type Skill = {
 export const skills: Skill[] = [
   {
     name: "Typescript",
-    svg: <BiLogoTypescript />,
+    svg: <BiLogoTypescript size="100%" />,
   },
   {
     name: "React",
-    svg: <FaReact />,
+    svg: <FaReact size="100%" />,
   },
   {
     name: "Python",
-    svg: <BiLogoPython />,
+    svg: <BiLogoPython size="100%" />,
   },
   {
     name: "C++",
-    svg: <SiCplusplus />,
+    svg: <SiCplusplus size="100%" />,
   },
   {
     name: "Java",
-    svg: <FaJava />,
+    svg: <FaJava size="100%" />,
   },
   {
     name: "PHP",
-    svg: <DiPhp />,
+    svg: <DiPhp size="100%" />,
   },
   {
     name: "Laravel",
-    svg: <DiLaravel />,
+    svg: <DiLaravel size="100%" />,
   },
   {
     name: "Git",
-    svg: <DiGit />,
+    svg: <DiGit size="100%" />,
   },
   {
     name: "Javascript",
-    svg: <IoLogoJavascript />,
+    svg: <IoLogoJavascript size="100%" />,
   },
 ];
