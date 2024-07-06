@@ -5,7 +5,7 @@ import Home from "./pages/Home/Home";
 import "bootstrap/dist/css/bootstrap.min.css";
 import AboutPage from "./pages/About/About";
 import Projects from "./pages/Projects/Projects";
-import Contact from "./pages/Contact/Contact";
+import Experiences from "./pages/Experiences/Experiences";
 
 const App: React.FC = () => {
   return (
@@ -13,7 +13,7 @@ const App: React.FC = () => {
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<AboutPage />} />
       <Route path="/projects" element={<Projects />} />
-      <Route path="/contact" element={<Contact />} />
+      <Route path="/experiences" element={<Experiences/>}/>
     </Routes>
   );
 };
