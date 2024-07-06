@@ -8,19 +8,24 @@
   width: 85%; 
   height: 35vh;
   padding-top: 10%;
-  margin: auto; 
+  margin: auto;
 }
 
 .project-card-view {
-  height: 100%;
+  height: auto;
   background-color: rgb(35, 8, 35);
+  animation: slideInFromLeft 1s ease-out forwards;
+  border-radius: 2%;
+  transition: transform 0.3s ease; /* Ensure smooth scaling transition */
 }
 
-.project-card-view .card-body {
-  height: 150%;
-  overflow-x: hidden; 
-}
-
-.project-card-bg {
-  background-color: aqua;
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }

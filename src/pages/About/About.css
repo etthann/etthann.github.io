@@ -1,4 +1,3 @@
-
 .about-header {
   margin-top: 7% !important;
 }
@@ -17,6 +16,7 @@
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   color: white;
+  animation: fadeInSlideInLeft 1s ease-out forwards;
 }
 
 .astronaut-reading {
@@ -31,3 +31,27 @@ li.borderless {
   width: 100%;
 }
 
+@keyframes fadeInSlideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+.skills-container {
+  opacity: 0;
+  transform: translateY(50%);
+  filter: blur(5px);
+  transition: all 0.5s;
+}
+
+.Show {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+}
