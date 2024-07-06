@@ -5,9 +5,12 @@ import { Card } from "react-bootstrap";
 
 export default function ExperienceContainer(props: any) {
   return (
-    <div className="row mt-5 gx-0 skill-container justify-content-center ">
-      <div className="col-md-11 mb-2">
-        <Card bg="dark" text="white" className="custom-card">
+    <div className="row mt-5 gx-0 justify-content-center project-container">
+      <div className="col-md-8 mb-2">
+        <Card
+          text="white"
+          className="custom-card custom-bg-color"
+        >
           <div className="d-flex">
             <Card.Img
               src={props.photo}

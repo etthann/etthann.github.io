@@ -1,12 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Nav from "../../components/Nav/Nav";
 import Footer from "../../components/Footer/Footer";
 import "./About.css";
 import { JSX } from "react/jsx-runtime";
 import AstronautReading from "../../photos/About/astronaut-reading.png";
 import SkillsContainer from "./Skills/SkillsContainer";
+import observer from "../../components/Observer/Observer";
 
 const AboutPage: React.FC = () => {
+  useEffect(() => {
+    const hiddenElements = document.querySelectorAll(".skills-container");
+    hiddenElements.forEach((el) => observer.observe(el));
+
+    // Clean up the observer when the component unmounts
+    return () => {
+      hiddenElements.forEach((el) => observer.unobserve(el));
+    };
+  }, []);
+
   const activities = ["Reading", "Excercising", "Drawing"];
   let activitiesList: JSX.Element[] = [];
   activities.forEach((activity, index) =>
@@ -39,14 +50,14 @@ const AboutPage: React.FC = () => {
         </div>
       </div>
       <div className="row mt-5 about-text">
-        <div className="col-md-4 offset-md-1 fs-3 header-text">
+        <div className="col-md-5 offset-md-1 fs-3 header-text">
           I'm currently pursing a bachelor in computer engineering and I am in
           my second year of engineering. <br /> <br />
           Apart from coding and building things, I enjoy many other activites!
           <ul className="bg-transparent">{activitiesList}</ul>
-          <div className="astronaut-reading">
-            <img src={AstronautReading} alt="Astronaut Reading" />
-          </div>
+        </div>
+        <div className="col-md-6">
+          <img src={AstronautReading} alt="Astronaut Reading" />
         </div>
       </div>
       <div className="row about-header gx-0">
@@ -54,7 +65,9 @@ const AboutPage: React.FC = () => {
           <p>Skills and Frameworks</p>
         </div>
       </div>
-      <SkillsContainer />
+      <div className="skills-container">
+        <SkillsContainer />
+      </div>
       <br />
       <br />
       <Footer />

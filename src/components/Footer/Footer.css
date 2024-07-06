@@ -2,7 +2,9 @@
   overflow: hidden;
   height: 10vh;
   display: flex;
-
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 .circle-image {

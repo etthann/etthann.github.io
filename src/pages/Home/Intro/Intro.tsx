@@ -1,9 +1,28 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Intro.css";
 import astronautSelfie from "../../../photos/Home/astronaut-selfie.png";
 import Socials from "../../../components/Socials/Socials";
+import observer from "../../../components/Observer/Observer";
 
 export default function Intro() {
+  useEffect(() => {
+    // Select both text and images for animation
+    const hiddenTextElements = document.querySelectorAll(".intro-text");
+    const hiddenImageElements = document.querySelectorAll(".astronaut-selfie"); // Assuming your images have this class
+
+    // Observe text elements
+    hiddenTextElements.forEach((el) => observer.observe(el));
+
+    // Observe image elements
+    hiddenImageElements.forEach((el) => observer.observe(el));
+
+    // Clean up the observer when the component unmounts
+    return () => {
+      hiddenTextElements.forEach((el) => observer.unobserve(el));
+      hiddenImageElements.forEach((el) => observer.unobserve(el));
+    };
+  }, []);
+
   return (
     <div className="container-fluid intro">
       <div className="row">
@@ -14,7 +33,7 @@ export default function Intro() {
         </div>
       </div>
       <div className="row">
-        <div className="col-md-6 offset-md-1 intro-text fs-5">
+        <div className="col-md-6 offset-md-1 intro-text fs-4">
           <p>
             Hello! I'm a computer engineering student with a strong passion for
             programming.
