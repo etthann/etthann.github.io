@@ -29,3 +29,13 @@
     opacity: 1;
   }
 }
+
+.github-chart-container {
+  background-color: rgb(35, 8, 35);
+  
+}
+
+.github-chart {
+  width: 100%;
+  height: auto;
+}
