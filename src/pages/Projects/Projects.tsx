@@ -27,10 +27,21 @@ const Projects: React.FC = () => {
       </div>
       <br />
       <br />
-      <br />
-      <br />
-      <br />
+      <br/>
+      <br/>
+      <div className="row justify-content-center align-items-center">
+        <div className="col-md-8 github-chart-container">
 
+          <img
+            className="github-chart text-white"
+            src="http://ghchart.rshah.org/etthann"
+            alt="etthann's Github chart"
+          />
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
       <Footer />
     </div>
   );
