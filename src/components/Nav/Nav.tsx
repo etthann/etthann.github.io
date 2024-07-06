@@ -56,19 +56,19 @@ export default function Nav() {
               <li className="nav-item active me-4">
                 <Link
                   className="nav-link text-light text-decoration-none"
-                  to="/projects"
-                  onClick={(e) => handleLinkClick(e, "projects")}
+                  to="/experiences"
+                  onClick={(e) => handleLinkClick(e, "experiences")}
                 >
-                  Projects
+                  Experiences
                 </Link>
               </li>
               <li className="nav-item active me-4">
                 <Link
                   className="nav-link text-light text-decoration-none"
-                  to="/contact"
-                  onClick={(e) => handleLinkClick(e, "contact")}
+                  to="/projects"
+                  onClick={(e) => handleLinkClick(e, "projects")}
                 >
-                  Contact Me
+                  Projects
                 </Link>
               </li>
             </ul>

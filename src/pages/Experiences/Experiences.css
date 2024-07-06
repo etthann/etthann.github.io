@@ -1,0 +1,21 @@
+.experience-header {
+  margin-top: 7% !important;
+}
+
+.header-color {
+  color: rgb(245, 255, 98);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.current-time {
+  font-weight: normal;
+  font-size: 1rem; /* Adjust the size as needed */
+}
