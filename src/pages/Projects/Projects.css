@@ -3,3 +3,24 @@
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
+
+.custom-img-size {
+  width: 85%; 
+  height: 35vh;
+  padding-top: 10%;
+  margin: auto; 
+}
+
+.project-card-view {
+  height: 100%;
+  background-color: rgb(35, 8, 35);
+}
+
+.project-card-view .card-body {
+  height: 150%;
+  overflow-x: hidden; 
+}
+
+.project-card-bg {
+  background-color: aqua;
+}
