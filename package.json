@@ -1,7 +1,7 @@
 {
   "name": "website",
   "version": "0.1.0",
-  "homepage": "https://etthann.github.io",
+  "homepage": "https://etthann.github.io/",
   "private": true,
   "dependencies": {
     "@octokit/rest": "^22.0.0",
