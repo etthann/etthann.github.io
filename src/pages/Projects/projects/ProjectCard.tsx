@@ -1,6 +1,5 @@
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-import { BsGithub } from "react-icons/bs";
 import "../Projects.css";
 
 export default function ProjectCard(props: any) {
@@ -10,7 +9,7 @@ export default function ProjectCard(props: any) {
         variant="top"
         src={props.photo}
         alt="card-img"
-        className="custom-img-size" // Apply the custom class here
+        className="custom-img-size"
       />
       <Card.Body>
         <Card.Title className="projects-title">{props.name}</Card.Title>
@@ -21,8 +20,7 @@ export default function ProjectCard(props: any) {
           href={props.link}
           target="_blank"
         >
-          <BsGithub /> &nbsp;
-          {"GitHub"}
+          Open
         </Button>
       </Card.Body>
     </Card>

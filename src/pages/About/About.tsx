@@ -4,10 +4,11 @@ import Footer from "../../components/Footer/Footer";
 import "./About.css";
 import { JSX } from "react/jsx-runtime";
 import AstronautReading from "../../photos/About/astronaut-reading.png";
-import SkillsContainer from "./Skills/SkillsContainer";
+// import SkillsContainer from "./Skills/SkillsContainer";
 import observer from "../../components/Observer/Observer";
 
 const AboutPage: React.FC = () => {
+
   useEffect(() => {
     const hiddenElements = document.querySelectorAll(".skills-container");
     hiddenElements.forEach((el) => observer.observe(el));
@@ -18,7 +19,7 @@ const AboutPage: React.FC = () => {
     };
   }, []);
 
-  const activities = ["Reading", "Excercising", "Drawing"];
+  const activities = ["Reading", "Exercising", "Drawing", "Gaming"];
   let activitiesList: JSX.Element[] = [];
   activities.forEach((activity, index) =>
     activitiesList.push(
@@ -52,7 +53,7 @@ const AboutPage: React.FC = () => {
       <div className="row mt-5 about-text">
         <div className="col-md-5 offset-md-1 fs-3 header-text">
           I'm currently pursing a bachelor in computer engineering and I am in
-          my second year of engineering. <br /> <br />
+          my third year of engineering. <br /> <br />
           Apart from coding and building things, I enjoy many other activites!
           <ul className="bg-transparent">{activitiesList}</ul>
         </div>
@@ -62,11 +63,10 @@ const AboutPage: React.FC = () => {
       </div>
       <div className="row about-header gx-0">
         <div className="col-md-12 d-flex justify-content-center align-items-center fs-1 header-color fw-bold">
-          <p>Skills and Frameworks</p>
         </div>
       </div>
       <div className="skills-container">
-        <SkillsContainer />
+        {/* <SkillsContainer /> */}
       </div>
       <br />
       <br />

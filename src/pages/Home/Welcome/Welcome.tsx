@@ -11,16 +11,17 @@ export default function Welcome() {
           <div className="home-header fs-1">
             <p>Hi There!</p>
             <p>
-              I'm <span className="home-importantText">ETHAN IEONG</span>
+              I'm <span className="home-importantText">Ethan Ieong</span>
             </p>
-            <br/>
+            <br />
             <span className="home-importantText">
               <Typewriter
                 options={{
                   strings: [
                     "Software Developer",
-                    "Engineering Student",
+                    "Computer Engineering Student",
                     "Full Stack Developer",
+                    "Embedded Software Developer"
                   ],
                   autoStart: true,
                   loop: true,
