@@ -68,7 +68,7 @@ const Projects: React.FC = () => {
   return (
     <div className="container-fluid overflow-x-hidden main-screen-background gx-0 ">
       <Nav />
-      <div className="projects-title mt-5 text-center fs-1">PROJECTS</div>
+      <div className="projects-title mt-5 text-center fs-1">Projects</div>
       <div className="row mt-5 gx-0 justify-content-center">
         {repos.slice(1).map((project, index) => (
 
