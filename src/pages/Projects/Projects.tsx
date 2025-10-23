@@ -80,7 +80,7 @@ const Projects: React.FC = () => {
               photo={FlowerImage}
               name={project?.name}
               description={project?.description}
-              link={project?.url}
+              link={project?.html_url}
             />
           </div>
         ))}
