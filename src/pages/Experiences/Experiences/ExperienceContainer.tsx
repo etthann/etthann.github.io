@@ -1,8 +1,6 @@
-/* eslint-disable array-callback-return */
 import React from "react";
 import "./ExperienceContainer.css";
-import { Card } from "react-bootstrap";
-
+import { Card } from 'react-bootstrap';
 export default function ExperienceContainer(props: any) {
   return (
     <div className="row mt-5 gx-0 justify-content-center project-container">
