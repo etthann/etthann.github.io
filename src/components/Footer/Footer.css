@@ -1,0 +1,37 @@
+.footer-container {
+  overflow: hidden;
+  height: 10vh;
+  display: flex;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.circle-image {
+  width: 15%; /* Set the width of the circle */
+  height: 85%; /* Set the height of the circle */
+  border-radius: 50%; /* Make the div a circle */
+  overflow: hidden; /* Ensure the image does not overflow the circle */
+  display: flex; /* Center the image inside the div */
+  justify-content: center; /* Center horizontally */
+  align-items: center;
+  margin-left: 5%;
+}
+
+.circle-image img {
+  max-width: 100%; /* Ensure the image scales correctly */
+  height: auto; /* Maintain the aspect ratio */
+}
+
+.creator {
+  margin-left: 2%;
+}
+
+.col {
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-socials {
+  margin-left: 5%;
+}
