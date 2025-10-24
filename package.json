@@ -40,7 +40,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d build -b main -r https://github.com/etthann/etthann.github.io.git",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
