@@ -1,0 +1,71 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main] # change if your default branch isn't main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+env:
+  BUILD_DIR: build # <— set this to your build output folder (dist, build, out, etc.)
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install deps
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      # Optional: ensure .nojekyll so underscores/folders aren't ignored by Jekyll
+      - name: Add .nojekyll
+        run: touch "$BUILD_DIR/.nojekyll"
+
+      # Optional SPA fix: copy index.html to 404.html for client-side routing (React/Vue/SPA)
+      - name: SPA 404 fallback (optional)
+        run: |
+          if [ -f "$BUILD_DIR/index.html" ]; then
+            cp "$BUILD_DIR/index.html" "$BUILD_DIR/404.html"
+          fi
+
+      # Optional: keep custom domain
+      # If you track CNAME in the repo root, copy it into the artifact so Pages keeps it.
+      - name: Include CNAME (optional)
+        run: |
+          if [ -f "CNAME" ]; then
+            cp CNAME "$BUILD_DIR/CNAME"
+          fi
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ${{ env.BUILD_DIR }}
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
