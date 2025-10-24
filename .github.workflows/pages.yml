@@ -15,6 +15,7 @@ concurrency:
   cancel-in-progress: true
 
 env:
+  APP_DIR: portfolio-website
   BUILD_DIR: build # <— set this to your build output folder (dist, build, out, etc.)
 
 jobs:
